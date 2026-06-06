@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teklif Sepeti | Doğa Ahşap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/tema-on-yukle.js"></script>
+</head>
+<body>
+    <header class="site-header site-header-koyu">
+    <div class="header-ic">
+      <nav class="nav-sol" aria-label="Sol menü">
+        <ul class="nav-liste">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html" class="header-logo">Doğa Ahşap</a>
+
+      <div class="header-sag">
+        <nav class="nav-sag" aria-label="Sağ menü">
+          <ul class="nav-liste">
+            <li><a href="hakkimizda.html#malzemeler">Malzemeler</a></li>
+            <li><a href="teklif.html">Teklif Al</a></li>
+            <li><a href="admin-giris.html" class="nav-admin">Admin</a></li>
+          </ul>
+        </nav>
+        <div class="header-ikonlar">
+          <a href="sepet.html" class="nav-ikon nav-sepet aktif" aria-label="Teklif sepeti" aria-current="page">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 6h15l-1.5 9h-12L6 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M6 6 5 3H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="9" cy="20" r="1" fill="currentColor"/>
+              <circle cx="18" cy="20" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <div class="tema-gecis" role="group" aria-label="Tema seçimi">
+            <button type="button" class="tema-btn aktif" data-tema-sec="acik" aria-pressed="true">Açık</button>
+            <button type="button" class="tema-btn" data-tema-sec="koyu" aria-pressed="false">Koyu</button>
+          </div>
+          <a href="urunler.html" class="nav-ikon nav-ara" aria-label="Ürünlerde ara">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M16 16l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Menüyü aç veya kapat">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobil-menu" id="anaMenu" aria-label="Mobil menü">
+      <ul class="nav-liste">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="urunler.html">Ürünler</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="hakkimizda.html#malzemeler">Malzemeler</a></li>
+        <li><a href="sepet.html" class="aktif">Teklif Sepeti</a></li>
+        <li><a href="teklif.html">Teklif Al</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="admin-giris.html" class="nav-admin">Admin</a></li>
+      </ul>
+      <div class="tema-gecis" role="group" aria-label="Tema seçimi">
+        <button type="button" class="tema-btn aktif" data-tema-sec="acik" aria-pressed="true">Açık</button>
+        <button type="button" class="tema-btn" data-tema-sec="koyu" aria-pressed="false">Koyu</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sayfa-banner">
+      <h1>Teklif Sepeti</h1>
+      <p>Seçtiğiniz ürünler — sayfayı yenileyince veriler kalır</p>
+    </section>
+    <section class="sayfa-govde kapsayici">
+      <p id="sepetBos" class="bos-mesaj" hidden>Sepetiniz boş. <a href="urunler.html">Ürünlere göz atın</a>.</p>
+      <ul id="sepetListe" class="sepet-liste"></ul>
+      <div id="sepetOzet" class="sepet-ozet" hidden>
+        <p>Toplam: <strong id="sepetToplam">0 ₺</strong></p>
+        <a href="teklif.html" class="btn btn-birincil" style="margin-top:1rem">Teklif İste</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="kapsayici">
+      <div class="footer-grid">
+        <div>
+          <h3>Doğa Ahşap Mobilya</h3>
+          <p>El yapımı masif ahşap mobilya atölyesi.</p>
+        </div>
+        <div>
+          <h3>İletişim</h3>
+          <p>Sanayi Mah. Ahşap Sok. No: 12, İstanbul</p>
+          <p>Tel: 0212 555 00 00</p>
+          <p><a href="mailto:info@dogaahsap.com">info@dogaahsap.com</a></p>
+        </div>
+        <div>
+          <h3>Sayfalar</h3>
+          <p><a href="urunler.html">Ürünler</a></p>
+          <p><a href="sepet.html">Sepet</a></p>
+          <p><a href="teklif.html">Teklif Al</a></p>
+          <p><a href="iletisim.html">İletişim</a></p>
+          <p><a href="hakkimizda.html">Hakkımızda</a></p>
+        </div>
+      </div>
+      <p class="footer-alt">&copy; 2026 Doğa Ahşap Mobilya. Web Tasarım dersi projesi.</p>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/sepet.js"></script>
+  <script src="js/demo-veri.js"></script>
+  <script src="js/tema.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sepet-sayfa.js"></script>
+</body>
+</html>

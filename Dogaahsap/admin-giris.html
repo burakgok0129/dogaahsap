@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Giriş | Doğa Ahşap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body class="admin-giris-sayfa">
+  <div class="admin-kutu">
+    <h1>Doğa Ahşap</h1>
+    <p class="admin-alt-baslik">Yönetim paneli — teklifleri görüntüle</p>
+
+    <p id="girisHata" class="admin-hata" hidden>Kullanıcı adı veya şifre hatalı.</p>
+
+    <form id="adminGirisForm" class="admin-form">
+      <label for="kullanici">Kullanıcı adı</label>
+      <input type="text" id="kullanici" name="kullanici" required autocomplete="username" />
+
+      <label for="sifre">Şifre</label>
+      <input type="password" id="sifre" name="sifre" required autocomplete="current-password" />
+
+      <button type="submit" class="btn-admin">Giriş Yap</button>
+    </form>
+
+    <p class="admin-ipucu">
+      <a href="index.html">← Müşteri sitesine dön</a><br />
+      <small style="color:#666">Demo: admin / admin123</small>
+    </p>
+  </div>
+
+  <script src="js/admin-auth.js"></script>
+  <script src="js/admin-giris-sayfa.js"></script>
+</body>
+</html>

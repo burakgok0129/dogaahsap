@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Doğa Ahşap Mobilya — El yapımı masif ahşap mobilya, özel ölçü üretim ve montaj hizmeti."
+    />
+    <title>Doğa Ahşap Mobilya | Ana Sayfa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/tema-on-yukle.js"></script>
+  </head>
+  <body>
+    <!-- Üst menü — diğer sayfalarda da aynı yapı kullanılacak -->
+    <header class="site-header site-header-koyu">
+      <div class="header-ic">
+        <nav class="nav-sol" aria-label="Sol menü">
+          <ul class="nav-liste">
+            <li><a href="index.html" class="aktif">Ana Sayfa</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+          </ul>
+        </nav>
+
+        <a href="index.html" class="header-logo">Doğa Ahşap</a>
+
+        <div class="header-sag">
+          <nav class="nav-sag" aria-label="Sağ menü">
+            <ul class="nav-liste">
+              <li><a href="hakkimizda.html#malzemeler">Malzemeler</a></li>
+              <li><a href="teklif.html">Teklif Al</a></li>
+              <li><a href="admin-giris.html" class="nav-admin">Admin</a></li>
+            </ul>
+          </nav>
+          <div class="header-ikonlar">
+            <a href="sepet.html" class="nav-ikon nav-sepet" aria-label="Teklif sepeti">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 6h15l-1.5 9h-12L6 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M6 6 5 3H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="9" cy="20" r="1" fill="currentColor"/>
+                <circle cx="18" cy="20" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <div class="tema-gecis" role="group" aria-label="Tema seçimi">
+              <button type="button" class="tema-btn aktif" data-tema-sec="acik" aria-pressed="true">Açık</button>
+              <button type="button" class="tema-btn" data-tema-sec="koyu" aria-pressed="false">Koyu</button>
+            </div>
+            <a href="urunler.html" class="nav-ikon nav-ara" aria-label="Ürünlerde ara">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M16 16l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Menüyü aç veya kapat">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="mobil-menu" id="anaMenu" aria-label="Mobil menü">
+        <ul class="nav-liste">
+          <li><a href="index.html" class="aktif">Ana Sayfa</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+          <li><a href="hakkimizda.html#malzemeler">Malzemeler</a></li>
+          <li><a href="sepet.html">Teklif Sepeti</a></li>
+          <li><a href="teklif.html">Teklif Al</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="admin-giris.html" class="nav-admin">Admin</a></li>
+        </ul>
+        <div class="tema-gecis" role="group" aria-label="Tema seçimi">
+          <button type="button" class="tema-btn aktif" data-tema-sec="acik" aria-pressed="true">Açık</button>
+          <button type="button" class="tema-btn" data-tema-sec="koyu" aria-pressed="false">Koyu</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-koyu" aria-label="Karşılama">
+        <div class="hero-merkez">
+          <p class="hero-etiket">Masif Ahşap Atölyesi</p>
+          <h1 class="hero-logo-baslik">Doğa Ahşap</h1>
+          <p class="hero-slogan">
+            El işçiliği mobilya · Özel ölçü üretim · Zamansız tasarım
+          </p>
+        </div>
+        <a href="#icerik" class="hero-kaydir">
+          <span>Keşfetmek için kaydır</span>
+          <span class="hero-kaydir-cizgi" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <!-- Neden bizi seçmelisiniz -->
+      <section id="icerik" class="ozellikler kapsayici" aria-labelledby="ozellik-baslik">
+        <h2 id="ozellik-baslik" class="bolum-baslik">Neden Doğa Ahşap?</h2>
+        <p class="bolum-alt-baslik">
+          Küçük atölyemizde her parça özenle işlenir; seri üretim değil, size
+          özel üretim yapıyoruz.
+        </p>
+
+        <div class="ozellik-grid">
+          <article class="ozellik-kart">
+            <div class="ozellik-ikon" aria-hidden="true">🪵</div>
+            <h3>%100 Masif Ahşap</h3>
+            <p>
+              Meşe, ceviz ve çam gibi gerçek ağaçlar; sunta veya laminat
+              kullanmıyoruz.
+            </p>
+          </article>
+
+          <article class="ozellik-kart">
+            <div class="ozellik-ikon" aria-hidden="true">📐</div>
+            <h3>Özel Ölçü Üretim</h3>
+            <p>
+              Odanıza tam oturan dolap, mutfak veya çalışma masası — ölçünüze
+              göre tasarlarız.
+            </p>
+          </article>
+
+          <article class="ozellik-kart">
+            <div class="ozellik-ikon" aria-hidden="true">🛠️</div>
+            <h3>Montaj Desteği</h3>
+            <p>
+              İstanbul ve çevresinde teslimat ve profesyonel montaj
+              hizmeti sunuyoruz.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Öne çıkan ürünler -->
+      <section class="one-cikan" aria-labelledby="one-cikan-baslik">
+        <div class="kapsayici">
+          <h2 id="one-cikan-baslik" class="bolum-baslik">Öne Çıkan Ürünler</h2>
+          <p class="bolum-alt-baslik">
+            En çok tercih edilen parçalarımızdan bir seçki. Tüm kataloğumuz
+            ürünler sayfasında.
+          </p>
+
+          <div class="urun-grid">
+            <article class="urun-kart">
+              <img
+                src="img/urun-1-mese-masa.jpg"
+                alt="Masif meşe yemek masası"
+                width="400"
+                height="200"
+              />
+              <div class="urun-kart-icerik">
+                <h3>Meşe Yemek Masası</h3>
+                <p class="urun-fiyat">12.500 ₺</p>
+                <a href="urunler.html" class="btn btn-birincil">Detayları Gör</a>
+              </div>
+            </article>
+
+            <article class="urun-kart">
+              <img
+                src="img/urun-2-ceviz-masa.jpg"
+                alt="Ceviz çalışma masası"
+                width="400"
+                height="200"
+              />
+              <div class="urun-kart-icerik">
+                <h3>Ceviz Çalışma Masası</h3>
+                <p class="urun-fiyat">8.900 ₺</p>
+                <a href="urunler.html" class="btn btn-birincil">Detayları Gör</a>
+              </div>
+            </article>
+
+            <article class="urun-kart">
+              <img
+                src="img/urun-3-kitaplik.jpg"
+                alt="Ahşap kitaplık"
+                width="400"
+                height="200"
+              />
+              <div class="urun-kart-icerik">
+                <h3>Duvar Kitaplığı</h3>
+                <p class="urun-fiyat">6.200 ₺</p>
+                <a href="urunler.html" class="btn btn-birincil">Detayları Gör</a>
+              </div>
+            </article>
+          </div>
+
+          <p style="text-align: center; margin-top: 2rem">
+            <a href="urunler.html" class="btn btn-ikincil">Tüm Ürünleri Gör</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Kısa hakkımızda -->
+      <section class="hakkimizda-ozet kapsayici" aria-labelledby="hakkimizda-baslik">
+        <h2 id="hakkimizda-baslik" class="bolum-baslik">Atölyemizden</h2>
+        <div class="hakkimizda-icerik">
+          <img
+            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80"
+            alt="Ahşap mobilya atölyesi içi"
+            width="500"
+            height="350"
+          />
+          <div class="hakkimizda-metin">
+            <p>
+              2015’ten beri İstanbul’da küçük bir atölyede masif mobilya
+              üretiyoruz. Ustamız Ahmet Yılmaz ve ekibi, her siparişi tek tek
+              ele alır; hazır montaj paketleri yerine kalıcı, onarılabilir
+              mobilya sunar.
+            </p>
+            <p>
+              Müşterilerimizle yüz yüze görüşerek ölçü alır, ahşap cinsini
+              birlikte seçeriz. Sürdürülebilir orman ürünleri tedarikçileriyle
+              çalışıyoruz.
+            </p>
+            <a href="hakkimizda.html" class="btn btn-ikincil">Daha Fazla Bilgi</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teklif çağrısı -->
+      <section class="cta-bolum" aria-label="Teklif talebi">
+        <div class="kapsayici">
+          <h2>Özel Ölçü Projeniz mi Var?</h2>
+          <p>
+            Fotoğraf ve ölçülerinizi gönderin; 48 saat içinde ücretsiz fiyat
+            teklifi hazırlayalım.
+          </p>
+          <a href="teklif.html" class="btn btn-birincil">Teklif Formunu Doldur</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="kapsayici">
+        <div class="footer-grid">
+          <div>
+            <h3>Doğa Ahşap Mobilya</h3>
+            <p>El yapımı masif ahşap mobilya atölyesi.</p>
+          </div>
+          <div>
+            <h3>İletişim</h3>
+            <p>Sanayi Mah. Ahşap Sok. No: 12, İstanbul</p>
+            <p>Tel: 0212 555 00 00</p>
+            <p>
+              <a href="mailto:info@dogaahsap.com">info@dogaahsap.com</a>
+            </p>
+          </div>
+          <div>
+            <h3>Sayfalar</h3>
+            <p><a href="urunler.html">Ürünler</a></p>
+            <p><a href="sepet.html">Sepet</a></p>
+            <p><a href="teklif.html">Teklif Al</a></p>
+            <p><a href="iletisim.html">İletişim</a></p>
+            <p><a href="hakkimizda.html">Hakkımızda</a></p>
+          </div>
+        </div>
+        <p class="footer-alt">
+          &copy; 2026 Doğa Ahşap Mobilya. Web Tasarım dersi projesi.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/demo-veri.js"></script>
+    <script src="js/tema.js"></script>
+    <script src="js/main.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", demoVeriYukle);</script>
+  </body>
+</html>

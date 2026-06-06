@@ -1,0 +1,7 @@
+Ürün görselleri (yerel — sayfa yenilense de çalışır):
+- urun-1-mese-masa.jpg — Meşe yemek masası
+- urun-2-ceviz-masa.jpg — Ceviz çalışma masası
+- urun-3-kitaplik.jpg — Duvar kitaplığı
+- urun-4-sandalye.jpg — Masif sandalye
+- urun-5-tv-unitesi.jpg — Ahşap TV ünitesi
+- urun-6-komodin.jpg — Komodin

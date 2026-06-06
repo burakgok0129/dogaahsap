@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teklif Listesi | Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body class="admin-panel-sayfa">
+  <header class="admin-header">
+    <div>
+      <h1>Teklif Yönetimi</h1>
+      <p>Toplam <strong id="teklifSayisi">0</strong> teklif talebi</p>
+    </div>
+    <div class="admin-header-linkler">
+      <a href="index.html" target="_blank">Siteyi aç</a>
+      <a href="teklif.html" target="_blank">Teklif formu</a>
+      <button type="button" id="teklifYenile" class="btn-admin-ikincil">Listeyi yenile</button>
+      <button type="button" id="adminCikis" class="btn-admin-ikincil">Çıkış</button>
+    </div>
+  </header>
+
+  <main class="admin-icerik">
+    <section class="admin-kart">
+      <h2>Gelen Teklif Talepleri</h2>
+      <p style="color:var(--admin-soluk);font-size:0.85rem;margin-bottom:1rem">
+        Müşteriler <strong>teklif.html</strong> formundan talep gönderir. <strong>Onayla</strong> dediğinizde o saat dolu sayılır ve teklif formunda seçilemez.
+      </p>
+
+      <p id="teklifBos" class="admin-bos" hidden>Henüz teklif yok. Teklif formundan yeni kayıt ekleyin.</p>
+
+      <div class="admin-tablo-wrap">
+        <table class="admin-tablo">
+          <thead>
+            <tr>
+              <th>Ad Soyad</th>
+              <th>E-posta</th>
+              <th>Telefon</th>
+              <th>Randevu</th>
+              <th>Saat</th>
+              <th>Durum</th>
+              <th>Mesaj</th>
+              <th>Gönderim</th>
+              <th>İşlem</th>
+            </tr>
+          </thead>
+          <tbody id="teklifTabloGovde"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="admin-kart" style="margin-top:1.5rem">
+      <h2>Dolu Saat Kayıtları (Log)</h2>
+      <p style="color:var(--admin-soluk);font-size:0.85rem;margin-bottom:1rem">
+        Admin onayından sonra dolu olan randevular burada loglanır.
+      </p>
+      <p id="doluLogBos" class="admin-bos" hidden>Henüz onaylı / dolu randevu yok.</p>
+      <div class="admin-tablo-wrap">
+        <table class="admin-tablo">
+          <thead>
+            <tr>
+              <th>Tarih</th>
+              <th>Saat</th>
+              <th>Müşteri</th>
+              <th>Durum</th>
+              <th>Onay zamanı</th>
+              <th>Kayıt</th>
+            </tr>
+          </thead>
+          <tbody id="doluLogGovde"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/demo-veri.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", demoVeriYukle);</script>
+  <script src="js/teklif-slot.js"></script>
+  <script src="js/admin-auth.js"></script>
+  <script src="js/admin-teklif.js"></script>
+</body>
+</html>
